@@ -4,13 +4,20 @@
 		<h1 class="contact-form_title">Contact Me</h1>
 		<div class="separator"></div>
 
-		<div v-if="isSending" class="loading">Sendig...</div>
-
-		<form class="form">
-			<input placeholder="Name" type="text" >
-			<input placeholder="E-mail" type="email" >
-			<textarea rows="4" placeholder="Message"></textarea>
-		   <button class="button">Send</button>
+		<form @submit.prevent="submitForm" class="form" id="contactForm">
+			<input @blur="$v.form.name.$touch()" v-model="form.name" placeholder="Name" type="text" id="name" >
+      <template v-if="$v.form.name.$error">
+        <span v-if="!$v.form.name.required" class="form-error">This field is required</span>
+      </template>
+			<input @blur="$v.form.email.$touch()" v-model="form.email" placeholder="E-mail" type="email" id="email" >
+      <template v-if="$v.form.email.$error">
+        <span v-if="!$v.form.email.required" class="form-error">This field is required</span>
+      </template>
+			<textarea @blur="$v.form.message.$touch()" v-model="form.message"  rows="4" placeholder="Message" id="message"></textarea>
+      <template v-if="$v.form.message.$error">
+        <span v-if="!$v.form.message.required" class="form-error">This field is required</span>
+      </template>
+		   <button class="button" type="submit">Send</button>
 		</form>
 	</div>
 
@@ -18,8 +25,38 @@
 </template>
 
 <script>
+import { required, email } from "vuelidate/lib/validators";
+const firebase = require("./firebaseConfig.js");
 export default {
-  name: "Contact"
+  name: "Contact",
+  data() {
+    return {
+      form: {
+        name: null,
+        email: null,
+        message: null
+      }
+    };
+  },
+  validations: {
+    form: {
+      name: {
+        required
+      },
+      email: {
+        required,
+        email
+      },
+      message: {
+        required
+      }
+    }
+  },
+  methods: {
+    submitForm() {
+      console.log("djdjdjdjdj");
+    }
+  }
 };
 </script>
 
@@ -88,5 +125,8 @@ body {
 .contact-form .button {
   font-size: 15px;
   border-radius: 3px;
+}
+.form-error {
+  color: red;
 }
 </style>

@@ -18,9 +18,9 @@
              <p>I'm Iyatan Atchoro and I'm a software engineering student at mcgill university.
               Currently working at <span class="company">Bell</span> in Bell Media Division</p>
               <p>I work with </p>
-              
-              <vue-typer
-                  :text='["React.Js","Vue.Js","Vanilla JavaScript"]'
+              <div >
+                <vue-typer 
+                  :text='["React.Js","Vue.Js","Vanilla JavaScript","Node.Js","jQuery","Java", "Ocaml","C","Html", "CSS","MySQL"]'
                   :repeat='Infinity'
                   :shuffle='false'
                   initial-action='typing'
@@ -33,6 +33,9 @@
                   caret-animation='blink'
                   ></vue-typer>
 
+                
+              </div>
+              
 
           
             </div>

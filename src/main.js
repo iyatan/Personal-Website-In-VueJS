@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import App from "./App.vue";
 import VueParticles from "vue-particles";
 import KsVueFullpage from "ks-vue-fullpage";
+import Vuelidate from "vuelidate";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faUserSecret,
@@ -19,6 +21,7 @@ Vue.use(KsVueFullpage);
 Vue.use(VueParticles);
 
 Vue.use(VueRouter);
+Vue.use(Vuelidate);
 
 new Vue({
   render: h => h(App)
