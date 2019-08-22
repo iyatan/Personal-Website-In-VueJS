@@ -5,7 +5,7 @@
     <div class="contact">
       <h3 class="contact-us">Contact Me</h3>
       <div class="alert">Your message has been sent!</div>
-      <form id="contactForm" action="POST" netlify >
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" >
         <p class="name-field">
           <label>Name <span>*</span></label>
           <input type="text" name="name" id="name" required>
