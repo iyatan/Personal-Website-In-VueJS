@@ -1,21 +1,16 @@
 <template>
     <section class="home">
-  
       <div class="container">
-        
-  
         <div class="box">
           <div class="bar">
             <ul><a href="#home" class="button-style">Home</a></ul>
             <ul><a href="#projects" class="button-style">Projects</a></ul>
             <ul><a href="#contact" class="button-style">Contact</a></ul>
             <ul><a href="#blog" class="button-style">Blogs</a></ul>
-            
           </div>
-            
         </div>
-            <div class="welcome-message">
-             <p>I'm Iyatan Atchoro and I'm a software engineering student at mcgill university.
+            <div class="welcome-message animated zoomIn">
+             <p >I'm Iyatan Atchoro and I'm a software engineering student at mcgill university.
               Currently working at <span class="company">Bell</span> in Bell Media Division</p>
               <p>I work with </p>
               <div >
@@ -32,15 +27,8 @@
                   :erase-on-complete='false'
                   caret-animation='blink'
                   ></vue-typer>
-
-                
-              </div>
-              
-
-          
             </div>
-
-  
+            </div> 
           <vue-particles class="background"
         color="#dedede"
         :particleOpacity="0.33"
@@ -57,12 +45,8 @@
         :clickEffect="true"
         clickMode="push"
       >
-      
       </vue-particles>
-
       </div>
-    
-
     </section>
 </template>
 

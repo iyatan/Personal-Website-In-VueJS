@@ -1,25 +1,32 @@
 <template>
-
-	<div id="contact-form" class="contact-form">
-		<h1 class="contact-form_title">Contact Me</h1>
-		<div class="separator"></div>
-
-		<form @submit.prevent="submitForm" class="form" id="contactForm">
-			<input @blur="$v.form.name.$touch()" v-model="form.name" placeholder="Name" type="text" id="name" >
-      <template v-if="$v.form.name.$error">
-        <span v-if="!$v.form.name.required" class="form-error">This field is required</span>
-      </template>
-			<input @blur="$v.form.email.$touch()" v-model="form.email" placeholder="E-mail" type="email" id="email" >
-      <template v-if="$v.form.email.$error">
-        <span v-if="!$v.form.email.required" class="form-error">This field is required</span>
-      </template>
-			<textarea @blur="$v.form.message.$touch()" v-model="form.message"  rows="4" placeholder="Message" id="message"></textarea>
-      <template v-if="$v.form.message.$error">
-        <span v-if="!$v.form.message.required" class="form-error">This field is required</span>
-      </template>
-		   <button class="button" type="submit">Send</button>
-		</form>
-	</div>
+  <div class="container">
+  <h1 class="title">Contact Form</h1>
+  <div class="wrapper">
+    <div class="contact">
+      <h3 class="contact-us">Contact Me</h3>
+      <div class="alert">Your message has been sent!</div>
+      <form id="contactForm" v-on:submit.prevent >
+        <p class="name-field">
+          <label>Name <span>*</span></label>
+          <input type="text" name="name" id="name" required>
+        </p>
+        <p class="email-field">
+          <label>Email <span>*</span></label>
+          <input type="email" name="email" id="email" required>
+        </p>
+      
+        <p class="message-field full">
+          <label>Message</label>
+          <textarea name="message" rows="5" id="message"></textarea>
+        </p>
+        <p class="required-field">Required field <span>*</span></p>
+        <p class="submit-button">
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
 
     
 </template>
@@ -60,8 +67,214 @@ export default {
 };
 </script>
 
-<style>
+<style <style scoped>
 body {
+  background: #52c1f7;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 27.5px;
+}
+
+#contactForm {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "name"
+    "email"
+    "company"
+    "phone"
+    "message";
+}
+
+.required-field {
+  grid-column: 1 / 2;
+}
+
+.submit-button {
+  grid-column: 2 / 3;
+}
+
+.name-field {
+  grid-area: name;
+  grid-column: 1 / 3;
+}
+
+.email-field {
+  grid-area: email;
+  grid-column: 1 / 3;
+}
+
+.company-field {
+  grid-area: company;
+  grid-column: 1 / 3;
+}
+
+.phone-field {
+  grid-area: phone;
+  grid-column: 1 / 3;
+}
+
+.message-field {
+  grid-area: message;
+  grid-column: 1 / 3;
+}
+
+/* FORM STYLES */
+
+.contact-us {
+  margin: 0 0 30px;
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5dc3f2;
+}
+
+.contact form {
+  border: 0;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: rgba(74, 86, 96, 1);
+}
+
+.contact form input,
+.contact form textarea {
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  width: 100%;
+  padding: 0.4em 0.8em;
+  background: rgba(249, 250, 250, 0.5);
+  border: 1px solid rgba(74, 86, 96, 0.1);
+  border-radius: 2.5px;
+  outline-color: #5dc3f2;
+}
+
+.contact form button {
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  background: #5dc3f2;
+  width: 90px;
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+}
+
+.submit-button {
+  align-self: center;
+  justify-self: end;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #49b0e7;
+  color: #fff;
+  outline: 0;
+  transition: background-color 0.3s ease-out;
+}
+
+.required-field {
+  font-family: "Mukta Mahee", sans-serif;
+  font-weight: 200;
+  font-size: 10px;
+  color: rgba(74, 86, 96, 0.75);
+  align-self: center;
+  justify-self: start;
+}
+
+span {
+  color: #5dc3f2;
+}
+
+.alert {
+  margin-bottom: 1em;
+  padding: 10px;
+  background: #49b0e7;
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2.5px;
+  display: none;
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 500px) {
+  #contactForm {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name company"
+      "email phone"
+      "message message";
+  }
+
+  .name-field {
+    grid-area: name;
+    grid-column: 1 / 2;
+  }
+
+  .email-field {
+    grid-area: email;
+    grid-column: 1 / 2;
+  }
+
+  .company-field {
+    grid-area: company;
+    grid-column: 2 / 3;
+  }
+
+  .phone-field {
+    grid-area: phone;
+    grid-column: 2 / 3;
+  }
+
+  .message-field {
+    grid-area: message;
+    grid-column: 1 / 3;
+  }
+}
+</style>
+>
+/* body {
   background: #f1f1f1;
   font-family: "Roboto", sans-serif;
 }
@@ -128,5 +341,5 @@ body {
 }
 .form-error {
   color: red;
-}
+} */
 </style>
