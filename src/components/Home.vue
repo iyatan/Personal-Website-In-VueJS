@@ -11,9 +11,10 @@
         </div>
             <div class="welcome-message animated zoomIn">
              <p >I'm Iyatan Atchoro and I'm a software engineering student at mcgill university.
-              Currently working at <span class="company">Bell</span> in Bell Media Division</p>
+              I previously worked at <a target="_blank" href="https://www.bell.ca/"><span class="company"> Bell</span></a> in <a target="_blank" href="https://www.bellmedia.ca/">Bell Media </a>division, <a target="_blank" href="https://ongoing.media/"><span class="company"> OnGoing Entertainment</span></a> and <a target="_blank" href="http://www.togotelecom.tg/"><span class="company">Togo Telecom</span></a> 
+              </p>
               <p>I work with </p>
-              <div >
+              <div class="skills">
                 <vue-typer 
                   :text='["React.Js","Vue.Js","Vanilla JavaScript","Node.Js","jQuery","Java", "Ocaml","C","Html", "CSS","MySQL"]'
                   :repeat='Infinity'
@@ -168,7 +169,25 @@ ul:hover {
 }
 
 .vue-typer {
-  color: #009688;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+.vue-typer .custom.char.typed {
+  color: #607d8b;
+}
+.vue-typer .custom.char.selected {
+  color: #607d8b;
+  background-color: transparent;
+  text-decoration: line-through;
+}
+
+.vue-typer .custom.caret {
+  display: none;
+}
+.skills {
+  margin-top: 100px;
+  background-color: #fff;
+  border-radius: 1em;
 }
 @keyframes typing {
   from {

@@ -33,7 +33,6 @@
 
 <script>
 import { required, email } from "vuelidate/lib/validators";
-const firebase = require("./firebaseConfig.js");
 export default {
   name: "Contact",
   data() {
@@ -59,11 +58,7 @@ export default {
       }
     }
   },
-  methods: {
-    submitForm() {
-      console.log("djdjdjdjdj");
-    }
-  }
+  methods: {}
 };
 </script>
 
@@ -249,12 +244,12 @@ span {
 
   .name-field {
     grid-area: name;
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
   }
 
   .email-field {
     grid-area: email;
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
   }
 
   .company-field {
