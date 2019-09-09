@@ -5,19 +5,19 @@
     <div class="contact">
       <h3 class="contact-us">Contact Me</h3>
       <div class="alert">Your message has been sent!</div>
-      <form id="contactForm" name="contact" method="POST" data-netlify="true" >
+      <form  name="contact-name" method="POST" data-netlify="true" >
         <p class="name-field">
           <label>Name <span>*</span></label>
-          <input type="text" name="name" id="name" required>
+          <input type="text" name="name-ex" id="name" required>
         </p>
         <p class="email-field">
           <label>Email <span>*</span></label>
-          <input type="email" name="email" id="email" required>
+          <input type="email" name="email-ex" id="email" required>
         </p>
       
         <p class="message-field full">
           <label>Message</label>
-          <textarea name="message" rows="5" id="message"></textarea>
+          <textarea name="message-ex" rows="5" id="message"></textarea>
         </p>
         <p class="required-field">Required field <span>*</span></p>
         <p class="submit-button">
