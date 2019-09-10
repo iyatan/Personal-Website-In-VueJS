@@ -17,7 +17,7 @@
       
         <p class="message-field full">
           <label>Message</label>
-          <textarea name="message-ex" rows="5" id="message"></textarea>
+          <textarea  rows="5" id="message"></textarea>
         </p>
         <p class="required-field">Required field <span>*</span></p>
         <p class="submit-button">
