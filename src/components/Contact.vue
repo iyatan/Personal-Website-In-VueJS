@@ -32,7 +32,6 @@
 </template>
 
 <script>
-import { required, email } from "vuelidate/lib/validators";
 export default {
   name: "Contact",
   data() {
@@ -43,22 +42,7 @@ export default {
         message: null
       }
     };
-  },
-  validations: {
-    form: {
-      name: {
-        required
-      },
-      email: {
-        required,
-        email
-      },
-      message: {
-        required
-      }
-    }
-  },
-  methods: {}
+  }
 };
 </script>
 
