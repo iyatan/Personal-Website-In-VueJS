@@ -14,6 +14,40 @@
   <noscript>
     <strong>We're sorry but iyatanapps doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
   </noscript>
+  <div class="container">
+    <h1 class="title">Contact Form</h1>
+    <div class="wrapper">
+      <div class="contact">
+        <h3 class="contact-us">Contact Me</h3>
+        <div class="alert">Your message has been sent!</div>
+        <form name="contact-name" method="POST" netlify>
+          <p class="name-field">
+            <label>Name
+              <span>*</span>
+            </label>
+            <input type="text" name="name-ex" id="name" required>
+          </p>
+          <p class="email-field">
+            <label>Email
+              <span>*</span>
+            </label>
+            <input type="email" name="email-ex" id="email" required>
+          </p>
+
+          <p class="message-field full">
+            <label>Message</label>
+            <textarea name="message-ex" rows="5" id="message"></textarea>
+          </p>
+          <p class="required-field">Required field
+            <span>*</span>
+          </p>
+          <p class="submit-button">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
   <div id="app"></div>
   <!-- built files will be auto injected -->
   <script src="path/to/particles.min.js"></script>
