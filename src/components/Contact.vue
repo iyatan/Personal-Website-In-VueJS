@@ -6,6 +6,11 @@
       <h3 class="contact-us">Contact Me</h3>
       <div class="alert">Your message has been sent!</div>
       <form  name="contact-name" method="POST" netlify>
+        <p class="hidden">
+      <label>Don’t fill this out if you're human:
+        <input name="bot-field" />
+      </label>
+    </p>
         <p class="name-field">
           <label>Name <span>*</span></label>
           <input type="text" name="name-ex" id="name" required>
@@ -46,7 +51,7 @@ export default {
 };
 </script>
 
-<style <style scoped>
+<style scoped>
 body {
   background: #52c1f7;
 }
@@ -251,74 +256,4 @@ span {
     grid-column: 1 / 3;
   }
 }
-</style>
->
-/* body {
-  background: #f1f1f1;
-  font-family: "Roboto", sans-serif;
-}
-
-.contact-form {
-  font-family: 16px;
-  margin: 0 auto;
-  max-width: 600px;
-  width: 100%;
-}
-
-.contact-form .separator {
-  border-bottom: solid 1px #ccc;
-  margin-bottom: 15px;
-}
-
-.contact-form .form {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-}
-
-.contact-form_title {
-  color: white;
-  text-align: left;
-  font-size: 28px;
-}
-
-.contact-form input[type="email"],
-.contact-form input[type="text"],
-.contact-form textarea {
-  border: solid 1px #e8e8e8;
-  font-family: "Roboto", sans-serif;
-  padding: 10px 7px;
-  margin-bottom: 15px;
-  outline: none;
-}
-
-.contact-form textarea {
-  resize: none;
-}
-
-.contact-form .button {
-  background: #da552f;
-  border: solid 1px #da552f;
-  color: white;
-  cursor: pointer;
-  padding: 10px 50px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.contact-form .button:hover {
-  background: #ea532a;
-  border: solid 1px #ea532a;
-}
-
-.contact-form input[type="email"],
-.contact-form input[type="text"],
-.contact-form textarea,
-.contact-form .button {
-  font-size: 15px;
-  border-radius: 3px;
-}
-.form-error {
-  color: red;
-} */
 </style>
