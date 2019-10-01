@@ -115,6 +115,7 @@ export default {
   box-shadow: 0 4px 80px #070509;
 }
 .welcome-message {
+  max-height: 100px;
   text-align: center;
   margin-top: 30vh;
   margin-top: 15%;
@@ -124,10 +125,6 @@ export default {
   font-size: 2em;
   z-index: 2;
 }
-/* .welcome-message p {
-  animation: typing 3.5s steps(30, end);
-} */
-
 .bar {
   display: flex;
   flex-direction: row;

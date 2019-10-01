@@ -1,6 +1,6 @@
 <template>
 <div >
-  <section id="home">
+  <section id="home" style="overflow: scroll;">
     <Home/>
     <a href="#projects"><Scrolling/></a>
     
@@ -62,7 +62,6 @@ export default {
 
 section {
   margin-top: 0px;
-  margin-bottom: 0px;
 }
 .contact-section {
   margin-top: 10%;
