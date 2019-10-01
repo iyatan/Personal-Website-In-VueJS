@@ -7,7 +7,7 @@
       <div class="alert">Your message has been sent!</div>
       <form  name="contact-name" method="POST" netlify>
         <p class="hidden">
-      <label>Don’t fill this out if you're human:
+      <label style="display: none">Don’t fill this out if you're human:
         <input name="bot-field" />
       </label>
     </p>

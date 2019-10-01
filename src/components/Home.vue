@@ -182,7 +182,6 @@ ul:hover {
   display: none;
 }
 .skills {
-  margin-top: 100px;
   background-color: #fff;
   border-radius: 1em;
 }

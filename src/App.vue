@@ -11,6 +11,7 @@
       <p style="text-align: center"> Bellow are some of my personal projects. Hover on them to you can go to the repository or a demo</p>
     </div>
     <div class="all-projects-wrapper">
+      <Project git_link="https://github.com/iyatan/Messenger-Web-App" live_link="" img_link="messager.gif" title="Messenger web app" description="Web App for messaging anyone on the platform"/>
       <Project git_link="https://github.com/iyatan/Toronto_Waste_LookUp" live_link="https://iyatan.github.io/Toronto_Waste_LookUp/" img_link="toronto_lookup.gif" title="Toronto Waste Loookup" description="React Js App to lookup waste in toronto database. Users can search, and bookmark their favorites and it will be saved in their local storage"/>
       <Project git_link="https://github.com/iyatan/Pure-JavaScrip-Clock/" live_link="http://jsclock.iyatanapps.com/" img_link="js-clock.gif" title="Pure JavaScript Clock" description="Clock made with Pure JavaScrip and no framework."/>
       <Project git_link="https://github.com/iyatan/Drums/" live_link="http://drums.iyatanapps.com/" img_link="drums.png" title="Pure Js Drums Kit(In progress)" description="Drums Kit made with Pure JavaScrip and no framework."/>
