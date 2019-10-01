@@ -1,6 +1,6 @@
 <template>
 <div >
-  <section id="home" style="overflow: scroll;">
+  <section id="home" style="overflow-y: scroll; ">
     <Home/>
     <a href="#projects"><Scrolling/></a>
     
