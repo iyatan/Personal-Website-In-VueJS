@@ -87,6 +87,7 @@ export default {
   text-align: center;
   max-width: 30%;
   position: relative;
+  background-color: hsl(0,0%,97%);
 }
 @media (max-width: 992px) {
   .project-wrapper {
