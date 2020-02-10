@@ -15,7 +15,7 @@
         </div> -->
       
         <div class="icons-div">
-          <a :href="`${git_link}`" target="_blank"><font-awesome-icon size="2x" icon="github" color="#E13556" /></a>
+          <a :href="`${git_link}`" target="_blank"><font-awesome-icon size="2x" icon="github-alt" color="#E13556" /></a>
           <a :href="`${live_link}`" target="_blank"><font-awesome-icon size="2x" icon="eye" color="#E13556" /></a>
           
         </div>
