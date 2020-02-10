@@ -81,7 +81,6 @@ export default {
 }
 .image-section {
   width: 75%;
-  border-right: 5px solid #fa7b22;
 }
 .info-section {
   text-align: center;
