@@ -11,8 +11,10 @@
         </div>
             <div class="welcome-message animated zoomIn">
              <p >I'm Iyatan Atchoro and I'm a software engineering student at mcgill university.
-              I previously worked at <a target="_blank" href="https://www.bell.ca/"><span class="company"> Bell</span></a> in <a target="_blank" href="https://www.bellmedia.ca/">Bell Media </a>division,
+              I previously worked at
               <a target="_blank" href="https://www.goldmansachs.com/"><span class="company"> Goldman Sachs</span></a>,
+              <a target="_blank" href="https://www.bell.ca/"><span class="company"> Bell</span></a> in <a target="_blank" href="https://www.bellmedia.ca/">Bell Media </a>division,
+              
               <a target="_blank" href="https://ongoing.media/"><span class="company"> OnGoing Entertainment</span></a> and
               <a target="_blank" href="http://www.togotelecom.tg/"><span class="company">Togo Telecom</span></a> 
               </p>
