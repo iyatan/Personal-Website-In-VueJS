@@ -15,7 +15,8 @@
         </div> -->
       
         <div class="icons-div">
-          <a :href="`${git_link}`" target="_blank"><font-awesome-icon size="2x" icon="github-alt" color="#E13556" /></a>
+          <i class="fab fa-github"></i>
+          <a :href="`${git_link}`" target="_blank"><font-awesome-icon size="2x" icon="code" color="#E13556" /></a>
           <a :href="`${live_link}`" target="_blank"><font-awesome-icon size="2x" icon="eye" color="#E13556" /></a>
           
         </div>
@@ -86,7 +87,7 @@ export default {
   text-align: center;
   max-width: 30%;
   position: relative;
-  background-color: hsl(0,0%,97%);
+  background-color: hsl(0, 0%, 97%);
 }
 @media (max-width: 992px) {
   .project-wrapper {

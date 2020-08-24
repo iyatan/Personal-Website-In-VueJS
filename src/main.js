@@ -1,3 +1,4 @@
+
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
@@ -9,10 +10,11 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faUserSecret,
   faExternalLinkAlt,
-  faEye
+  faEye,
+  faCode
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faUserSecret, faExternalLinkAlt, faEye);
+library.add(faCode, faUserSecret, faExternalLinkAlt, faEye);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
